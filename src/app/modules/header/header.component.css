@@ -1,0 +1,16 @@
+.globalContainer{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  vertical-align: center;
+  height: 80px;
+  background-color: #3c3f41;
+  color: white;
+  font-family: "Comic Sans MS";
+  font-weight: 500;
+  font-size: large;
+
+}
+
+.navItem{
+}
