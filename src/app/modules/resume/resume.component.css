@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
+.container-fluid{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.timeline{
+   width: 80%;
+   height: auto;
+   max-width: 800px;
+   margin: 0 auto;
+   position: relative; 
+   padding-top: 80px;
+}
+
+.timeline ul{
+    list-style: none;
+}
+
+.timeline ul li {
+    padding:15px;
+    background-color: rgb(221, 218, 218);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-content h1{
+    font-size: 18px;
+    font-weight: 400 ;
+    margin-bottom: 10px;
+}
+
+.timeline-content p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.timeline-content .date{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (min-width:768px){
+
+    .container-fluid{
+        padding-top: 100px;
+        height: 100vh;
+    }
+
+    h2{
+        margin-top: 20px;
+    }
+
+    .timeline{
+        padding-top: 0px;
+    }
+
+    .timeline::before{
+        content:'';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        background-color: #7656c1;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .timeline ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+
+    .timeline ul li:nth-child(even){
+        float: right;
+        clear:left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline ul li::after {
+        content: "";
+        position:absolute;
+        height: 20px;
+        width: 20px;
+        background-color: #7656c1;
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .timeline ul li:nth-child(odd)::after{
+        transform: translate(50%,-50%);
+        right: -30px;
+    }
+
+    .timeline ul li:nth-child(even)::after{
+        transform: translate(-50%,-50%);
+        left: -30px;
+    }
+
+    .timeline ul li:hover:after{
+        background-color: aqua;
+    }
+
+    .timeline-content .date {
+        position: absolute;
+        top: -45px;
+    }
+}

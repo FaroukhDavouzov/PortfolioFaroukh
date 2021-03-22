@@ -7,19 +7,35 @@ import { HeaderComponent } from './modules/header/header.component';
 import { SharedModule } from './shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import {ProfileComponent} from './modules/profile/page/profile.component';
+import { AboutComponent } from './modules/about/page/about.component';
+import { ProjectComponent } from './modules/project/project.component';
+import { ResumeComponent } from './modules/resume/resume.component';
+import { RouterModule } from '@angular/router';
+import { SkillsComponent } from './modules/skills/skills.component';
+import { ContactComponent } from './modules/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProfileComponent,
+    AboutComponent,
+    ProjectComponent,
+    ResumeComponent,
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     SharedModule,
     FlexLayoutModule,
-    NgbModule
+    NgbModule,
+    RouterModule.forRoot([
+      {path: 'resume', component: ResumeComponent},
+      {path: 'profile', component: ProfileComponent},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
