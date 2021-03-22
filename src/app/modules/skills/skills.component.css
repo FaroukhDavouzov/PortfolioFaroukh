@@ -16,11 +16,11 @@ ul{
 }
 
 ul:nth-child(1){
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 ul:nth-child(2){
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 li {
@@ -140,5 +140,6 @@ li.reactNative:after {
 
     p{
         text-align: center;
+        font-size: large;
     }
 }

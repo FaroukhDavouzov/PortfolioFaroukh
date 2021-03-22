@@ -36,7 +36,7 @@ h2{
 }
 
 .timeline ul li {
-    padding:15px;
+    padding:20px;
     background-color: rgb(221, 218, 218);
     border-radius: 20px;
     margin-bottom: 20px;
@@ -53,12 +53,12 @@ h2{
 }
 
 .timeline-content p{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .timeline-content .date{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     margin-bottom: 10px;
     letter-spacing: 2px;
