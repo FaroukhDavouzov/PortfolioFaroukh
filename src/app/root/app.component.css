@@ -1,0 +1,40 @@
+.about{
+    align-items: center; 
+    justify-content: center;
+    min-height: 100%;
+}
+
+app-profile{
+    padding-top: 80px;
+}
+
+html, body { height: 100% }
+
+*{
+    scroll-behavior: smooth;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .about{
+        align-items: center; 
+        justify-content: center;
+        height: 100vh;
+    }
+
+    app-profile{
+        padding-top: 0px;
+    }
+
+    app-header{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        background-color: rgb(242, 239, 239);;
+    }
+}
+

@@ -1,0 +1,24 @@
+.container-fluid{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.profileImage{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.informationContainer{
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+a{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+h2{
+  font-weight: 400;
+}
